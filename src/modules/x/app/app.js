@@ -24,7 +24,14 @@ export default class App extends LightningElement {
       }, {
         name: 'John',
         data: [5, 7, 3]
-      }]
+      }],
+      tooltip: {
+        useHTML: true,
+        animation: false,
+        formatter: function () {
+          return '<div>foo</div>';
+        }
+      }
     });
   }
 }
