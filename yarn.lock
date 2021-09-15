@@ -310,7 +310,7 @@
   dependencies:
     resolve "~1.20.0"
 
-"@lwc/rollup-plugin@^2.2.9":
+"@lwc/rollup-plugin@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@lwc/rollup-plugin/-/rollup-plugin-2.4.0.tgz#c985dfd85c6d17ab62421c6e98c5208c011fe959"
   integrity sha512-1AXwC3p1H2OcZuy73pdMFJePofbPR7I0B1dJ7oPJRbIQ+bP7YLr+SjaiL6wIkjPXia6EqIrMZJ0vgTsJvYftGg==
@@ -1001,7 +1001,7 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-lwc@^2.2.9:
+lwc@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/lwc/-/lwc-2.4.0.tgz#37fa229ef62290fa957c07e71e2b67846b0d5ff1"
   integrity sha512-eaI8QXEzs+bIuegT1rS3HH7LVbodjQVA+Dcd/u8Dpj4C8kGQSEaW5jyjfM1iUr2iX83dKbosiux40g5gvnVQLg==
