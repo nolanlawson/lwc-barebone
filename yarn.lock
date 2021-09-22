@@ -310,7 +310,7 @@
   dependencies:
     resolve "~1.20.0"
 
-"@lwc/rollup-plugin@^2.4.0":
+"@lwc/rollup-plugin@^2.5.1":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@lwc/rollup-plugin/-/rollup-plugin-2.5.1.tgz#025dc5259c3cbb57460f25a1adaa71431dcf2c7f"
   integrity sha512-xrKkcgRH683TtS0O+pBksuzmrufqL/cRW37Elvgthj2o7WMbbUJIlnP3yeLHslTn8hf0SolMrapByvM+HodN9w==
@@ -997,7 +997,7 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-lwc@^2.4.0:
+lwc@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/lwc/-/lwc-2.5.1.tgz#2e8e6ac61062c040ee29671d45bcf0135e3ebf01"
   integrity sha512-AroSVIuqfzPYfFm455NDo/C4p+BCtw5+alF4p+Iyft4VuCA1H1i5rU/FYgao5ThfNt1/KBq3UTowaqImlvP6eA==
@@ -1257,7 +1257,7 @@ resolve@~1.20.0:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
-rollup@^2.55.0:
+rollup@^2.57.0:
   version "2.57.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.57.0.tgz#c1694475eb22e1022477c0f4635fd0ac80713173"
   integrity sha512-bKQIh1rWKofRee6mv8SrF2HdP6pea5QkwBZSMImJysFj39gQuiV8MEPBjXOCpzk3wSYp63M2v2wkWBmFC8O/rg==
@@ -1298,7 +1298,7 @@ serve-handler@6.1.3:
     path-to-regexp "2.2.1"
     range-parser "1.2.0"
 
-serve@^12.0.0:
+serve@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/serve/-/serve-12.0.1.tgz#5b0e05849f5ed9b8aab0f30a298c3664bba052bb"
   integrity sha512-CQ4ikLpxg/wmNM7yivulpS6fhjRiFG6OjmP8ty3/c1SBnSk23fpKmLAV4HboTA2KrZhkUPlDfjDhnRmAjQ5Phw==
