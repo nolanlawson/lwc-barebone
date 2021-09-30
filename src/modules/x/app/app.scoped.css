@@ -1,0 +1,7 @@
+div {
+    --color-red: maroon;
+    color: var(--color-blue);
+}
+div span {
+    --color-blue: cornflowerblue;
+}
