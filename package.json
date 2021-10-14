@@ -6,10 +6,10 @@
     "start": "serve"
   },
   "devDependencies": {
-    "@lwc/rollup-plugin": "^2.5.2",
+    "@lwc/rollup-plugin": "^2.5.4",
     "@rollup/plugin-replace": "^3.0.0",
-    "lwc": "^2.5.2",
-    "rollup": "^2.57.0",
+    "lwc": "^2.5.4",
+    "rollup": "^2.58.0",
     "serve": "^12.0.1"
   },
   "volta": {
