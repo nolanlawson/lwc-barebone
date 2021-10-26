@@ -1,0 +1,10 @@
+<template>
+    <x-slottable>
+        <template if:true={foo}>
+            <slot slot="myslot">foo</slot>
+        </template>
+        <template if:false={foo}>
+            <slot slot="myslot">bar</slot>
+        </template>
+    </x-slottable>
+</template>
