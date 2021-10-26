@@ -6,9 +6,9 @@
     "start": "serve"
   },
   "devDependencies": {
-    "@lwc/rollup-plugin": "^2.5.6",
+    "@lwc/rollup-plugin": "^2.5.7",
     "@rollup/plugin-replace": "^3.0.0",
-    "lwc": "^2.5.6",
+    "lwc": "^2.5.7",
     "rollup": "^2.58.3",
     "serve": "^12.0.1"
   },
