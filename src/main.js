@@ -1,5 +1,8 @@
-import { createElement } from "lwc";
 import App from "x/app";
+import Component from 'x/component';
 
-const elm = createElement("x-app", { is: App });
-document.body.appendChild(elm);
+customElements.define('x-app', App.CustomElementConstructor);
+customElements.define('x-component', Component.CustomElementConstructor);
+
+const app = document.createElement('x-app')
+document.body.appendChild(app)
