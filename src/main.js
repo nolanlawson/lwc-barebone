@@ -10,11 +10,11 @@ customElements.define('x-vanilla', VanillaCustomElement)
 
 
 function test(elm) {
-  const template = document.createElement('template');
-  console.log('appending to template content')
-  template.content.appendChild(elm);
-  console.log('appending template content to document.body')
-  document.body.appendChild(template.content);
+  const div = document.createElement('div');
+  console.log('appending to div')
+  div.appendChild(elm);
+  console.log('appending div to document.body')
+  document.body.appendChild(div);
 }
 
 console.log("--- lightning element ---")
