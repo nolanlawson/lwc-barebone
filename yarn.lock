@@ -351,105 +351,105 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@lwc/babel-plugin-component@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/babel-plugin-component/-/babel-plugin-component-2.11.1.tgz#4fb97b3643098dd38e74ebb6d25aa20d87ab6cc0"
-  integrity sha512-zLsoaFXzMbg684EcPf4HnP0WJxHPCYm0G7fWTcQwv1c8KUoKWjk1ussrhXdBnxk8eEvJc0UoFhTYU/ec4fdEcQ==
+"@lwc/babel-plugin-component@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/babel-plugin-component/-/babel-plugin-component-2.11.3.tgz#42de43ae53141e123eaa782f37e9450ee690d470"
+  integrity sha512-8b6gJ4bPomxtsRoRDO+sYsIvoicHbfHVWVh+ymXnm7HNmn24Zd/7jVRYoPUicoTtY0BiusVZ5jL6CE/wyNYupw==
   dependencies:
     "@babel/helper-module-imports" "~7.16.7"
-    "@lwc/errors" "2.11.1"
-    "@lwc/shared" "2.11.1"
+    "@lwc/errors" "2.11.3"
+    "@lwc/shared" "2.11.3"
     line-column "~1.0.2"
 
-"@lwc/compiler@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/compiler/-/compiler-2.11.1.tgz#156bf8ef134415036e5719fbdf487c6478d2cf22"
-  integrity sha512-kDtX+FcTzTQEtR7uFtQFpq/nhAw+GH8EKp+/uHWGHMisCsqCHusOe1A2p3KElC6zVpEwfK/9D4ji9xVUgxPSbw==
+"@lwc/compiler@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/compiler/-/compiler-2.11.3.tgz#113fa1e0dfe98915283f8192d99e737abfc5e2a8"
+  integrity sha512-m0sQOdI1bq93uVx9YmXEceZjYc+4SDSSyaS8Iv+mj7j0ZccGUMeMCsgYTfnnXxsMpycAtjuABO6hB4NndaG1ow==
   dependencies:
     "@babel/core" "~7.17.4"
     "@babel/plugin-proposal-class-properties" "~7.16.7"
     "@babel/plugin-proposal-object-rest-spread" "~7.17.3"
-    "@lwc/babel-plugin-component" "2.11.1"
-    "@lwc/errors" "2.11.1"
-    "@lwc/shared" "2.11.1"
-    "@lwc/style-compiler" "2.11.1"
-    "@lwc/template-compiler" "2.11.1"
+    "@lwc/babel-plugin-component" "2.11.3"
+    "@lwc/errors" "2.11.3"
+    "@lwc/shared" "2.11.3"
+    "@lwc/style-compiler" "2.11.3"
+    "@lwc/template-compiler" "2.11.3"
 
-"@lwc/engine-dom@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/engine-dom/-/engine-dom-2.11.1.tgz#f510594276ae134eb9e8dde35ccaa7e1a81ddbc9"
-  integrity sha512-yKF3jqbfLqNYtGGcAMKmp30t9Mrsop/uB7+k312ynUPnKTiKrVvzYytHmwvB09iu2mwFefrvXopb7meUrcX/Sg==
+"@lwc/engine-dom@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/engine-dom/-/engine-dom-2.11.3.tgz#d5393062eec30070d37870eb8aaedd322eb37e91"
+  integrity sha512-Aqh3/8lxL7QiEZV51ukLBqwkIEwveoJ0WmxFe5IKo0IUilDja7e/g5YUtlXLsaR+75nIIgYQANZEDskU4NKO7w==
 
-"@lwc/engine-server@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/engine-server/-/engine-server-2.11.1.tgz#360045bf2203953cc496ca07d797da2a297427b9"
-  integrity sha512-95h2grNOfu+LQ85e98d1JnB4CieaVl8WyAM477an9tMI2ZjKLIKsxM19YWgxP2JFySd74ZHMW+HGvNoIrU6f3g==
+"@lwc/engine-server@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/engine-server/-/engine-server-2.11.3.tgz#c39bbe4c5c5ec57eacc3f75759c416547fafbc23"
+  integrity sha512-Ae0piuC52w+bVm/+3VnRxaUZEaCM53HmHoMYNixehH8Q8r2FnrkvZLAplsVDVLTtXg3wIkfUVMAjGmD2RAPj0A==
 
-"@lwc/errors@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/errors/-/errors-2.11.1.tgz#673ebd73e9e9af8348552e2fc4be7c1ca577e0a9"
-  integrity sha512-KEiPhAbWZqo8ldMAzwlbIAuV2At/gKRIqefSvxMSOAk+n0GC7F3WdkQ5vHpJUaD0pkmvvAdFV+CK++3QiIio1A==
+"@lwc/errors@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/errors/-/errors-2.11.3.tgz#f20027c2bb743ca688c8a35c2bcaf57ccc0284c8"
+  integrity sha512-7MJ3VAj8UCTPc+umsV9eUP0gsSewp8Gb8IjR1Q18O4xfqd1htL52xoXJS3e+JyOSjTYlUi0S1OtBl0AvroRMPg==
 
-"@lwc/features@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/features/-/features-2.11.1.tgz#d055c0b850771dfd8e17352a3a952bdecbec0115"
-  integrity sha512-dMZ2IGbCrXYrGTdB9EPTuExhSNOQeal/X3SJ23hjKTfn6tKXiE+puO7aji1/v6Q80DktvJ4ltqxAHivtPUf8XA==
+"@lwc/features@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/features/-/features-2.11.3.tgz#5f3adb9eccae0447db0a859e16f61a54ccd9119e"
+  integrity sha512-8AIYGVNSie9TxXEUrKQ3I/+8fvKutBtJctoXEU6lQxjMiHQLRO3HdcSE9WAPn0Q6CgRSdTJIYsVnf7hJZ3k8fw==
   dependencies:
-    "@lwc/shared" "2.11.1"
+    "@lwc/shared" "2.11.3"
 
-"@lwc/module-resolver@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/module-resolver/-/module-resolver-2.11.1.tgz#a3840a60b3cdc37ae96061e4b3f0f18db20e6293"
-  integrity sha512-jbXXPIbE4EpRjOfrDr8nWgJ3tGQcIU6Krv0e+f2nB8eICLuY2kVoWl+8NfQqkN85wys4NLe69XNRi+uZgWG4wQ==
+"@lwc/module-resolver@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/module-resolver/-/module-resolver-2.11.3.tgz#4840d7ac0db06f92a73ac7040e480070a691ff51"
+  integrity sha512-AFTnDn3gErSJ+zqxREI8OhoknFcVEyy3jO2fcAJJqdCYpFmoRhRcnUM6IGioAN7ZGfDVb0Fg71nRqiQtBYdC6A==
   dependencies:
     resolve "~1.22.0"
 
-"@lwc/rollup-plugin@^2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/rollup-plugin/-/rollup-plugin-2.11.1.tgz#6d40d1ae979c8808722e78341ea97f59aca3c9a0"
-  integrity sha512-y2q6O3z1Qr4Nd4sVgnwNpCSOAE3Z97ZzpsGE3s7hU6cqMF653bWI5RZHeSo8IxoMLP44x5w0vPBv1DBNqrRInA==
+"@lwc/rollup-plugin@^2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/rollup-plugin/-/rollup-plugin-2.11.3.tgz#6280c9a4c658aad4ef551b0c6b101d8404a9396c"
+  integrity sha512-zS4BfWjFhlxkvfmhDWM8IA+K5r4wRB77G5yYpBFdF3UZZqF1rOaD4dI0cWKz0FPZAeWFm4lhuwyjpZICFFZtpA==
   dependencies:
-    "@lwc/module-resolver" "2.11.1"
+    "@lwc/module-resolver" "2.11.3"
     "@rollup/pluginutils" "~4.1.1"
 
-"@lwc/shared@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/shared/-/shared-2.11.1.tgz#1886d61ade71bc0617b7ee144e8fa0ac5f8dea2d"
-  integrity sha512-LNvZzSFTNNYQs2Fl5zI5CKqqRBodZ4bWIYYkgyBGLMTbgJhh8/DkZg2KGnIO7m+VmLE/QopbBqQw+n7tqLESjQ==
+"@lwc/shared@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/shared/-/shared-2.11.3.tgz#019c406ba20ce00fd4978ed28d2e45a8c834c3eb"
+  integrity sha512-Jn0SAI8TvYnD6c8sdyJG+lYEB1M+UMzjTRFEGvugLx1vEMPhrB1IxipqBXCbSGskmcOJXaGorJ7hol0yG8SHEg==
 
-"@lwc/style-compiler@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/style-compiler/-/style-compiler-2.11.1.tgz#5cf5989053ed53e25a773c69a0388b46f48ec21d"
-  integrity sha512-YEDud1WBlvQ6ly0oH242lNcEMOwVb6hDppQ3iUC9rq6xnXu6AErzLOFRUUt8SeZpv5/KzPX6/R9UQeKErUtrdA==
+"@lwc/style-compiler@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/style-compiler/-/style-compiler-2.11.3.tgz#e76b431cb0d3f73851e36d6c0509094da612a9eb"
+  integrity sha512-tINJWDEIGSfjRAD2aQiqnN0vmYmPwNchkRpZvpUOg1N6gX5/LeHAqkWWNyxJTWeKv3DybvCVANnebYRN0ZRQFQ==
   dependencies:
-    "@lwc/shared" "2.11.1"
+    "@lwc/shared" "2.11.3"
     postcss "~8.4.6"
     postcss-selector-parser "~6.0.9"
     postcss-value-parser "~4.2.0"
     string.prototype.matchall "^4.0.5"
 
-"@lwc/synthetic-shadow@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/synthetic-shadow/-/synthetic-shadow-2.11.1.tgz#3573772502b96bf41d3438089f5bca1af66c2965"
-  integrity sha512-8ziasusIKRUUgrIyNqmuVKKekc1sPfyZ6dtc8CLmBdJ3YknWh9LdBeZS9v/wRUqLWDJhPjAGE3E78YojryWgjQ==
+"@lwc/synthetic-shadow@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/synthetic-shadow/-/synthetic-shadow-2.11.3.tgz#7800d9f3094862ed5b4ba65ea12c5494390c5e24"
+  integrity sha512-0+PaotogHDU7KrWmMLfHyKp/5vSgQx1xnlnzGDP535L2EQ5OgOje/oPgdzphzdVViRGl0wNb2MVnLuIJOLqolg==
 
-"@lwc/template-compiler@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/template-compiler/-/template-compiler-2.11.1.tgz#fb6bc290f93a623a048d3b90a32274556641b57f"
-  integrity sha512-a7U+h5RhMKogyfdf2INk68JAHRhRJaK8LpdtR8GrD2Zn0xZdujv8jBVlf8/bzDr5bnvtiteyWOan9CUDIzNoEQ==
+"@lwc/template-compiler@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/template-compiler/-/template-compiler-2.11.3.tgz#c8450e19d61b6c64c5b1b6877ea4e62669af8bed"
+  integrity sha512-LZBEq/3ev+MWJSmYd9SRPfWu/FvoYx86sm84is3O26/qOc8114b783hf9IfFm3MTLINT6ZtKGAmGt6XbuvYnyg==
   dependencies:
-    "@lwc/errors" "2.11.1"
-    "@lwc/shared" "2.11.1"
+    "@lwc/errors" "2.11.3"
+    "@lwc/shared" "2.11.3"
     acorn "~8.7.0"
     astring "~1.8.1"
     estree-walker "~2.0.2"
     he "~1.2.0"
     parse5 "~6.0.1"
 
-"@lwc/wire-service@2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@lwc/wire-service/-/wire-service-2.11.1.tgz#ef06b6a5e4792a3df7eda551fda0554636aae813"
-  integrity sha512-QXsE7HzfrJ/wymrAx2oQIhpefeSU/GddttZlketWZlIKsM3TEpotnSEGfLS+IdJtMcHnopKOQ7fztURnYBmhvw==
+"@lwc/wire-service@2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@lwc/wire-service/-/wire-service-2.11.3.tgz#14d0305578d3832521eaae689ba01199e83f5725"
+  integrity sha512-Nt1j/NofXmOEtcBnfVv+a+bMuDudQsnO8jdAvCnMn6Mrcm7MSM+AUJHhBrAZLeNPrEvhO7QY51GlbnstVP8vDQ==
 
 "@rollup/plugin-replace@^4.0.0":
   version "4.0.0"
@@ -1170,17 +1170,17 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-lwc@^2.11.1:
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/lwc/-/lwc-2.11.1.tgz#1e95bf32d831480324dd0b892070c0af5fe175b5"
-  integrity sha512-Xuhptme6/RssyEfY6c64P/mlb5xvhm/BVY8ElsEQdhjnhB1nn2nKs1818AQKNC6gp0HeY1A3zHZZwMpeQkENSQ==
+lwc@^2.11.3:
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/lwc/-/lwc-2.11.3.tgz#a5ef7c14677b664749e30547516cce6b3f96a56b"
+  integrity sha512-V29UGvGLG5GI18vbsuUNOGuMoag1ZMcHri6dTuvjJsHjIvu4U5Lgh+p84lPhaYcQf3sqktUqbGjSWD/WYyh7hQ==
   dependencies:
-    "@lwc/compiler" "2.11.1"
-    "@lwc/engine-dom" "2.11.1"
-    "@lwc/engine-server" "2.11.1"
-    "@lwc/features" "2.11.1"
-    "@lwc/synthetic-shadow" "2.11.1"
-    "@lwc/wire-service" "2.11.1"
+    "@lwc/compiler" "2.11.3"
+    "@lwc/engine-dom" "2.11.3"
+    "@lwc/engine-server" "2.11.3"
+    "@lwc/features" "2.11.3"
+    "@lwc/synthetic-shadow" "2.11.3"
+    "@lwc/wire-service" "2.11.3"
 
 magic-string@^0.25.7:
   version "0.25.7"
