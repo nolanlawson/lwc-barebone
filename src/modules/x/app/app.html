@@ -1,3 +1,11 @@
 <template>
-    <h1>Hello world</h1>
+    <button onclick={moveDown}>Move Down</button>
+    <button onclick={moveUp}>Move Up</button>
+    <div class="container">
+        <div class="buffer" style={offsetY}>
+            <template for:each={visibleRows} for:item="row">
+                <p key={row.key}>{row.key}</p>
+            </template>
+        </div>
+    </div>
 </template>
