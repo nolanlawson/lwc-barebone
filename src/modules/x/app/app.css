@@ -1,0 +1,4 @@
+x-container::part(foo) {
+    display: block;
+    border: 5px solid magenta;
+}
