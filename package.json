@@ -4,17 +4,21 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c --environment production",
-    "start": "serve",
-    "dev": "run-p --race start watch",
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "NODE_ENV=development node server.js",
+    "dev": "run-p --race start:dev watch",
     "watch": "rollup -c --watch"
   },
   "devDependencies": {
-    "@lwc/rollup-plugin": "^2.45.2",
+    "@lwc/engine-server": "^2.45.5",
+    "@lwc/rollup-plugin": "^2.23.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-replace": "^5.0.2",
-    "lwc": "^2.45.2",
+    "@rollup/plugin-virtual": "^3.0.1",
+    "express": "^4.18.2",
+    "lwc": "^2.23.0",
     "npm-run-all": "^4.1.5",
-    "rollup": "^3.22.0",
-    "serve": "^14.2.0"
+    "rollup": "^3.23.0"
   },
   "volta": {
     "node": "16.17.1",
