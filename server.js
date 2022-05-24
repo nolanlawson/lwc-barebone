@@ -8,6 +8,8 @@ const vm = require('vm');
 
 const app = express()
 
+let style
+
 async function generateHtml() {
   const bundle = await rollup({
     input: 'virtual-entry',
@@ -60,7 +62,7 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
   vm.runInContext(code, context)
   const component = context.renderedComponent
 
-  const html = `
+  let html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,16 +70,21 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
     <title>LWC barebone - SSR</title>
 </head>
 <body>
-  ${component}  
-  <script type="module" src="main.js"></script>
+  ${component}
 </body>
 </html>
   `.trim()
+  const styleRegex = /<style.*?>([\s\S]+?)<\/style>/g
+  style = [...html.matchAll(styleRegex)][0][1]
+  html = html.replace(styleRegex, '<link rel="stylesheet" href="./style.css">')
   return html
 }
 
 let cachedHtml = process.env.NODE_ENV === 'production' && generateHtml()
 
+app.get('/style.css', (req, res) => {
+  res.type('text/css').send(style)
+})
 app.get('/', async (req, res) => {
   res.send(await (cachedHtml || generateHtml()))
 })
