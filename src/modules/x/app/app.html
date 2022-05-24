@@ -1,3 +1,5 @@
 <template>
-    <h1>Hello world</h1>
+    <template for:each={items} for:item="item">
+        <x-button key={item}></x-button>
+    </template>
 </template>
