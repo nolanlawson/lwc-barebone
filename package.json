@@ -22,5 +22,8 @@
   "volta": {
     "node": "16.10.0",
     "yarn": "1.22.15"
+  },
+  "dependencies": {
+    "compression": "^1.7.4"
   }
 }
