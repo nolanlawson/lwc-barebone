@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "build": "rollup -c --environment production",
-    "start": "node server.js",
-    "dev": "run-p --race start watch",
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "NODE_ENV=development node server.js",
+    "dev": "run-p --race start:dev watch",
     "watch": "rollup -c --watch"
   },
   "devDependencies": {
