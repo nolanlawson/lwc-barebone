@@ -1,23 +1,28 @@
 const express = require('express')
 const lwcRollupPlugin = require("@lwc/rollup-plugin");
 const { nodeResolve } = require('@rollup/plugin-node-resolve')
+const virtual = require('@rollup/plugin-virtual');
 const replace = require('@rollup/plugin-replace')
 const { rollup } = require('rollup')
-const fs = require('fs/promises')
-const path = require('path')
-const os = require('os')
+const vm = require('vm');
 
 const app = express()
 
-app.get('/', async (req, res) => {
-
+async function generateHtml() {
   const bundle = await rollup({
-    input: './src/renderComponentToString.js',
+    input: 'virtual-entry',
     plugins: [
+      virtual({
+        'virtual-entry': `
+import App from 'x/app'
+import { renderComponent } from '@lwc/engine-server'
+globalThis.renderedComponent = renderComponent('x-app', App, {})
+         `.trim(),
+      }),
       nodeResolve(),
       lwcRollupPlugin({
         modules: [
-          { dir: "./modules" },
+          { dir: "./src/modules" },
         ],
       }),
       // temporary fix for https://github.com/salesforce/lwc/pull/2852
@@ -39,19 +44,23 @@ app.get('/', async (req, res) => {
     ],
   });
 
-  const tmpDir = await fs.mkdtemp(path.join(os.tmpdir(), 'lwc-barebone-'));
-  const serverFile = path.join(tmpDir, 'app.server.cjs')
-
-  await bundle.write({
-    file: serverFile,
+  const { output } = await bundle.generate({
     format: 'cjs',
     exports: 'named',
   });
-  const { render } = require(serverFile)
+  const { code } = output[0];
+  const context = {
+    process: {
+      env: {
+        NODE_ENV: process.env.NODE_ENV || 'production'
+      }
+    }
+  }
+  vm.createContext(context)
+  vm.runInContext(code, context)
+  const component = context.renderedComponent
 
-  const component = render()
-
-  res.send(`
+  const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +72,14 @@ app.get('/', async (req, res) => {
   <script type="module" src="main.js"></script>
 </body>
 </html>
-  `.trim())
+  `.trim()
+  return html
+}
+
+let cachedHtml = process.env.NODE_ENV === 'production' && generateHtml()
+
+app.get('/', async (req, res) => {
+  res.send(await (cachedHtml || generateHtml()))
 })
 app.use(express.static('dist'))
 
