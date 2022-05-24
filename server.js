@@ -5,8 +5,11 @@ const virtual = require('@rollup/plugin-virtual');
 const replace = require('@rollup/plugin-replace')
 const { rollup } = require('rollup')
 const vm = require('vm');
+const compression = require('compression')
 
 const app = express()
+
+app.use(compression())
 
 let style
 
