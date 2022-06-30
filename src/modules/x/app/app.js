@@ -1,9 +1,3 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement } from 'lwc';
 
-export default class extends LightningElement {
-    @track rows = [];
-
-    add() {
-        this.rows.push({ id: 1 });
-    }
-}
+export default class extends LightningElement {}
