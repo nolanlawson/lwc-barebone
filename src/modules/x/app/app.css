@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Custom;
+    src:
+            local("Courier New"),
+            local("CourierNew"),
+            local("Courier");
+}
+
+.custom {
+    font-family: Custom;
+}
