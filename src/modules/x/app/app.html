@@ -2,7 +2,9 @@
     <button onclick={onAdd}>Add</button>
     <button onclick={onMutate}>Mutate</button>
     <button onclick={onClear}>Clear</button>
-    <template for:each={rows} for:item="row">
-        <x-cmp key={row.id} num={row.num}></x-cmp>
-    </template>
+    <x-slottable rows={rows}>
+        <template lwc:slot-data="row">
+            <x-cmp key={row.id} num={row.num}></x-cmp>
+        </template>
+    </x-slottable>
 </template>
