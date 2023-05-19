@@ -3,6 +3,7 @@ import { LightningElement, track } from 'lwc';
 let counter = 0
 
 export default class extends LightningElement {
+  static renderMode = 'light'
   @track rows = []
 
   @track mutatable = []
