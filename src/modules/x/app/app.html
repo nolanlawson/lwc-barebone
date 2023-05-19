@@ -2,9 +2,10 @@
     <button onclick={onAdd}>Add</button>
     <button onclick={onMutate}>Mutate</button>
     <button onclick={onClear}>Clear</button>
+    <div>My data is {data}</div>
     <x-slottable rows={data.rows}>
         <template lwc:slot-data="row">
-            <x-cmp num={row.num}></x-cmp>
+            <x-cmp num={row.num} data={data} foo={data.foo}></x-cmp>
         </template>
     </x-slottable>
 </template>

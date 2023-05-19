@@ -5,7 +5,8 @@ let counter = 0
 export default class extends LightningElement {
   static renderMode = 'light'
   @track data = {
-    rows: []
+    rows: [],
+    foo: 0
   }
 
   @track mutatable = []
@@ -25,6 +26,7 @@ export default class extends LightningElement {
     this.mutatable.forEach(row => {
       row.num++
     })
+    this.data.foo++
   }
 
   onClear () {
