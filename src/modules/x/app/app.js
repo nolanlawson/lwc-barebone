@@ -4,7 +4,9 @@ let counter = 0
 
 export default class extends LightningElement {
   static renderMode = 'light'
-  @track rows = []
+  @track data = {
+    rows: []
+  }
 
   @track mutatable = []
 
@@ -14,7 +16,7 @@ export default class extends LightningElement {
       id: count,
       num: count
     }
-    this.rows.push(row)
+    this.data.rows.push(row)
     this.mutatable.push(row)
   }
 
@@ -26,7 +28,7 @@ export default class extends LightningElement {
   }
 
   onClear () {
-    this.rows = []
+    this.data.rows = []
     console.log('Cleared, but this.mutatable still has length', this.mutatable.length)
   }
 }

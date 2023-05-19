@@ -1,5 +1,5 @@
 <template lwc:render-mode="light">
     <template for:each={rows} for:item="row">
-        <slot lwc:slot-bind={row}></slot>
+        <slot key={row.id} lwc:slot-bind={row}></slot>
     </template>
 </template>
