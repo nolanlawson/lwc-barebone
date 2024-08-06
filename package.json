@@ -9,7 +9,10 @@
     "watch": "rollup -c --watch"
   },
   "devDependencies": {
+    "@lwc/engine-dom": "^7.2.1",
     "@lwc/rollup-plugin": "^7.2.1",
+    "@lwc/synthetic-shadow": "^7.2.1",
+    "@lwc/wire-service": "^7.2.1",
     "@rollup/plugin-replace": "^5.0.7",
     "lwc": "^7.2.1",
     "npm-run-all": "^4.1.5",
