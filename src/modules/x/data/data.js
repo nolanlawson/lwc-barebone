@@ -56,11 +56,6 @@ export const dataStates = [
           "renderMe": true
         }
       ]
-    },
-    {
-      "id": 12,
-      "renderMe": true,
-      "children": []
     }
   ]
 ]
