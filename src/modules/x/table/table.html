@@ -1,0 +1,8 @@
+<template>
+    <template for:each={children} for:item="child">
+        <x-row lwc:if={child.renderMe} prop={child} key={child.id}></x-row>
+        <template lwc:if={child.children} for:each={child.children} for:item="grandchild">
+            <x-row lwc:if={grandchild.renderMe} prop={grandchild} key={grandchild.id}></x-row>
+        </template>
+    </template>
+</template>
