@@ -2,8 +2,7 @@ import vm  from 'vm'
 import express from 'express'
 import lwcRollupPlugin  from "@lwc/rollup-plugin"
 import { nodeResolve }  from '@rollup/plugin-node-resolve'
-import virtual  from '@rollup/plugin-virtual'
-import replace  from '@rollup/plugin-replace'
+import virtual from '@rollup/plugin-virtual'
 import { rollup }  from 'rollup'
 import * as ssrRuntime from '@lwc/ssr-runtime'
 
@@ -12,6 +11,7 @@ const app = express()
 async function generateHtml() {
   const bundle = await rollup({
     input: 'virtual-entry',
+    // avoid running `@lwc/ssr-runtime` itself through the LWC compiler, which causes errors
     external: [
       '@lwc/ssr-runtime'
     ],
