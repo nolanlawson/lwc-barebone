@@ -9,19 +9,19 @@ importers:
   .:
     devDependencies:
       '@lwc/engine-dom':
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0
       '@lwc/engine-server':
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0
       '@lwc/rollup-plugin':
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0(rollup@4.27.4)
       '@lwc/synthetic-shadow':
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0
       '@lwc/wire-service':
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0
       '@rollup/plugin-node-resolve':
         specifier: ^15.3.0
@@ -36,7 +36,7 @@ importers:
         specifier: ^4.21.1
         version: 4.21.1
       lwc:
-        specifier: ^8.10.1
+        specifier: ^8.11.0
         version: 8.11.0(@babel/core@7.26.0)(rollup@4.27.4)
       npm-run-all:
         specifier: ^4.1.5
@@ -965,9 +965,6 @@ packages:
     resolution: {integrity: sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==}
     engines: {node: '>=4'}
 
-  picocolors@1.1.0:
-    resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
-
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -1215,7 +1212,7 @@ snapshots:
     dependencies:
       '@babel/helper-validator-identifier': 7.25.9
       js-tokens: 4.0.0
-      picocolors: 1.1.0
+      picocolors: 1.1.1
 
   '@babel/compat-data@7.26.2': {}
 
@@ -2259,8 +2256,6 @@ snapshots:
     dependencies:
       pify: 3.0.0
 
-  picocolors@1.1.0: {}
-
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
@@ -2532,7 +2527,7 @@ snapshots:
     dependencies:
       browserslist: 4.24.2
       escalade: 3.2.0
-      picocolors: 1.1.0
+      picocolors: 1.1.1
 
   util-deprecate@1.0.2: {}
 

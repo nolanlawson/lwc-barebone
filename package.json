@@ -10,16 +10,16 @@
     "watch": "rollup -c --watch"
   },
   "devDependencies": {
-    "@lwc/engine-dom": "^8.10.1",
-    "@lwc/engine-server": "^8.10.1",
-    "@lwc/synthetic-shadow": "^8.10.1",
-    "@lwc/wire-service": "^8.10.1",
-    "@lwc/rollup-plugin": "^8.10.1",
+    "@lwc/engine-dom": "^8.11.0",
+    "@lwc/engine-server": "^8.11.0",
+    "@lwc/synthetic-shadow": "^8.11.0",
+    "@lwc/wire-service": "^8.11.0",
+    "@lwc/rollup-plugin": "^8.11.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-replace": "^6.0.1",
     "@rollup/plugin-virtual": "^3.0.2",
     "express": "^4.21.1",
-    "lwc": "^8.10.1",
+    "lwc": "^8.11.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^4.27.4"
   },
