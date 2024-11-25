@@ -25,13 +25,6 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
           { dir: "./src/modules" },
         ],
       }),
-      // temporary fix for https://github.com/salesforce/lwc/pull/2852
-      replace({
-        preventAssignment: false,
-        values: {
-          'window.__lwcResetWarnedOnVersionMismatch': 'globalThis.__lwcResetWarnedOnVersionMismatch'
-        }
-      }),
       // Replace `import { foo } from 'lwc'` with '@lwc/engine-server'
       replace({
         preventAssignment: true,
