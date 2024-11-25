@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@lwc/engine-dom": "^8.10.1",
-    "@lwc/engine-server": "^8.10.1",
+    "@lwc/ssr-runtime": "^8.10.1",
     "@lwc/synthetic-shadow": "^8.10.1",
     "@lwc/wire-service": "^8.10.1",
     "@lwc/rollup-plugin": "^8.10.1",
@@ -24,6 +24,7 @@
     "rollup": "^4.27.4"
   },
   "volta": {
-    "node": "22.6.0"
+    "node": "22.6.0",
+    "pnpm": "9.14.2"
   }
 }

@@ -15,7 +15,7 @@ async function generateHtml() {
       virtual({
         'virtual-entry': `
 import App from 'x/app'
-import { renderComponent } from '@lwc/engine-server'
+import { renderComponent } from '@lwc/ssr-runtime'
 globalThis.renderedComponent = renderComponent('x-app', App, {})
          `.trim(),
       }),
@@ -24,6 +24,7 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
         modules: [
           { dir: "./src/modules" },
         ],
+        targetSSR: true
       }),
       // temporary fix for https://github.com/salesforce/lwc/pull/2852
       replace({
@@ -31,16 +32,7 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
         values: {
           'window.__lwcResetWarnedOnVersionMismatch': 'globalThis.__lwcResetWarnedOnVersionMismatch'
         }
-      }),
-      // Replace `import { foo } from 'lwc'` with '@lwc/engine-server'
-      replace({
-        preventAssignment: true,
-        delimiters: ['', ''],
-        values: {
-          'from "lwc"': `from "@lwc/engine-server"`,
-          "from 'lwc'": `from "@lwc/engine-server"`,
-        },
-      }),
+      })
     ],
   });
 
