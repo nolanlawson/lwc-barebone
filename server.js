@@ -5,12 +5,16 @@ import { nodeResolve }  from '@rollup/plugin-node-resolve'
 import virtual  from '@rollup/plugin-virtual'
 import replace  from '@rollup/plugin-replace'
 import { rollup }  from 'rollup'
+import * as ssrRuntime from '@lwc/ssr-runtime'
 
 const app = express()
 
 async function generateHtml() {
   const bundle = await rollup({
     input: 'virtual-entry',
+    external: [
+      '@lwc/ssr-runtime'
+    ],
     plugins: [
       virtual({
         'virtual-entry': `
@@ -46,11 +50,17 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
       env: {
         NODE_ENV: process.env.NODE_ENV || 'production'
       }
+    },
+    require (pkgName) {
+      if (pkgName === '@lwc/ssr-runtime') {
+        return ssrRuntime
+      }
+      throw new Error('disallowed require: ' + pkgName)
     }
   }
   vm.createContext(context)
   vm.runInContext(code, context)
-  const component = context.renderedComponent
+  const component = await context.renderedComponent
 
   const html = `
 <!DOCTYPE html>
