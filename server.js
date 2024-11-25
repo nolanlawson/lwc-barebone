@@ -29,13 +29,6 @@ globalThis.renderedComponent = renderComponent('x-app', App, {})
           { dir: "./src/modules" },
         ],
         targetSSR: true
-      }),
-      // temporary fix for https://github.com/salesforce/lwc/pull/2852
-      replace({
-        preventAssignment: false,
-        values: {
-          'window.__lwcResetWarnedOnVersionMismatch': 'globalThis.__lwcResetWarnedOnVersionMismatch'
-        }
       })
     ],
   });
