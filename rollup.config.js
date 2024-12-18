@@ -11,7 +11,7 @@ export default {
 
   plugins: [
     replace({
-      "process.env.NODE_ENV": JSON.stringify('production'),
+      "process.env.NODE_ENV": JSON.stringify('development'),
       preventAssignment: true
     }),
     lwc(),

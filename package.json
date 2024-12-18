@@ -9,17 +9,18 @@
     "watch": "rollup -c --watch"
   },
   "devDependencies": {
-    "@lwc/engine-dom": "^8.6.0",
-    "@lwc/rollup-plugin": "^8.6.0",
-    "@lwc/synthetic-shadow": "^8.6.0",
-    "@lwc/wire-service": "^8.6.0",
-    "@rollup/plugin-replace": "^6.0.1",
-    "lwc": "^8.6.0",
+    "@lwc/engine-dom": "^8.12.1",
+    "@lwc/rollup-plugin": "^8.12.1",
+    "@lwc/synthetic-shadow": "^8.12.1",
+    "@lwc/wire-service": "^8.12.1",
+    "@rollup/plugin-replace": "^6.0.2",
+    "lwc": "^8.12.1",
     "npm-run-all": "^4.1.5",
-    "rollup": "^4.24.4",
+    "rollup": "^4.28.1",
     "serve": "^14.2.4"
   },
   "volta": {
-    "node": "22.6.0"
+    "node": "22.6.0",
+    "yarn": "1.22.22"
   }
 }

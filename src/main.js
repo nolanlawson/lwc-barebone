@@ -1,4 +1,4 @@
-import '@lwc/synthetic-shadow'
+import '../minimal-synthetic-shadow-repro.js'
 import { createElement } from "lwc";
 import App from "x/app";
 
